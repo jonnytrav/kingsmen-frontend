@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PreviewPlayer from "../PreviewPlayer";
+import "./index.css";
 
 const Results = props => {
   const [results, setResults] = useState(props.dataList);
@@ -9,15 +10,10 @@ const Results = props => {
   }, [props]);
 
   return (
-    <div>
-      <h1>Working!</h1>
-      {console.log("URL for preview in this block", results)}
+    <div className="results-list-container">
       {results.map((r, key) => {
         return (
-          <div>
-            {console.log(r)}
-            <style type="text/css"></style>
-            <div></div>
+          <div className="single-result">
             <PreviewPlayer
               id={key}
               url={r.previewUrl}

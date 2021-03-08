@@ -8,10 +8,10 @@ const PreviewPlayer = props => {
   const [playingBoolean, setPlayPause] = useState(false);
 
   return (
-    <div>
+    <div className="preview-container">
       <img
         src={props.coverImg}
-        className="coverArt"
+        // className="cover-art"
         alt="coverArt"
         onClick={e => {
           e.preventDefault();
@@ -20,6 +20,7 @@ const PreviewPlayer = props => {
       ></img>
       <ReactModal
         isOpen={playingBoolean}
+        className="preview"
         onRequestClose={e => {
           e.preventDefault();
           setPlayPause(!playingBoolean);
@@ -30,6 +31,7 @@ const PreviewPlayer = props => {
           url={props.url}
           playing={playingBoolean}
           loop={true}
+          //   className="player"
         ></ReactPlayer>
       </ReactModal>
     </div>

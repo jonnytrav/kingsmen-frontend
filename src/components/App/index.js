@@ -31,17 +31,20 @@ const App = () => {
       {/* INPUT SECTION */}
       <div className="search-container">
         <form
+          className="search-form"
           onSubmit={e => {
             e.preventDefault();
             onSubmitHandler();
           }}
         >
           <input
+            className="search-input"
             autoFocus
             autoCorrect="off"
             autoCapitalize="off"
             spellCheck="false"
             id="search"
+            placeholder="Find a song/artist/album..."
             onChange={e => {
               setSearchTerms(e.target.value);
             }}
