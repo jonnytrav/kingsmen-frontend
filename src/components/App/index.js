@@ -6,15 +6,11 @@ import "./App.css";
 const App = () => {
   const [terms, setSearchTerms] = useState("");
   const [results, setSearchResults] = useState([]);
-  //   Steps for onSubmit handler...
-  // 1) replace all spaces in 'term' param with '+'
-  // 2) utilize URL object to add route parameters via url.search property
-  // 3) convert results to JSON format in resolve block
-  // 4) populate array using concatenation to keep old and new results
+  //   ************************************************
   const onSubmitHandler = () => {
     const cleanedTerms = terms.replace(" ", "+");
     const url = new URL("https://itunes.apple.com/search");
-    const routeParams = { term: cleanedTerms, media: "musicVideo" };
+    const routeParams = { term: cleanedTerms, media: "musicVideo", limit: 42 };
     url.search = new URLSearchParams(routeParams);
     fetch(url, { method: "GET" })
       .then(results => results.json())

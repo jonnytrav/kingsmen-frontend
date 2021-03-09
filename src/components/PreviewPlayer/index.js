@@ -9,30 +9,41 @@ const PreviewPlayer = props => {
 
   return (
     <div className="preview-container">
-      <img
-        src={props.coverImg}
-        // className="cover-art"
-        alt="coverArt"
-        onClick={e => {
-          e.preventDefault();
-          setPlayPause(!playingBoolean);
-        }}
-      ></img>
+      <div className="cover-img-container">
+        <img
+          className="cover-img"
+          src={props.coverImg}
+          // className="cover-art"
+          alt="coverArt"
+          onClick={e => {
+            e.preventDefault();
+            setPlayPause(!playingBoolean);
+          }}
+        ></img>
+        <div className="cover-title">
+          <p>{props.song}</p>
+        </div>
+      </div>
+
       <ReactModal
         isOpen={playingBoolean}
-        className="preview"
         onRequestClose={e => {
           e.preventDefault();
           setPlayPause(!playingBoolean);
         }}
+        className="preview"
       >
-        <p>bunch of test p's</p>
         <ReactPlayer
           url={props.url}
           playing={playingBoolean}
           loop={true}
           //   className="player"
         ></ReactPlayer>
+        <div className="song-details">
+          <div>Title: {props.song}</div>
+          <div>Artist: {props.artist}</div>
+          <div>Genre: {props.genre}</div>
+        </div>
       </ReactModal>
     </div>
   );

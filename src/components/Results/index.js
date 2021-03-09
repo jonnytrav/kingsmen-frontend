@@ -12,12 +12,16 @@ const Results = props => {
   return (
     <div className="results-list-container">
       {results.map((r, key) => {
+        console.log(r);
         return (
           <div className="single-result">
             <PreviewPlayer
               id={key}
               url={r.previewUrl}
-              coverImg={r.artWorkUrl60}
+              coverImg={r.artworkUrl100}
+              song={r.trackName}
+              artist={r.artistName}
+              genre={r.primaryGenreName}
             ></PreviewPlayer>
           </div>
         );
