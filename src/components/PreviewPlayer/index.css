@@ -5,9 +5,12 @@
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  border: 2px solid blue;
+  box-sizing: border-box;
+  padding: 1%;
 }
 .player {
-  width: 25%;
+  width: 49.5%;
 }
 .cover-img-container {
   max-height: 64px;
@@ -24,4 +27,11 @@
 }
 .cover-title {
   width: 49%;
+}
+.song-details {
+  width: 49.5%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }

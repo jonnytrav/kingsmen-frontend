@@ -6,7 +6,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  /* transform: perspective(2700px) rotate3d(0, 1, 0, 18deg); */
 }
 .single-result {
   width: 26%;
