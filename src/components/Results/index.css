@@ -1,0 +1,17 @@
+.results-list-container {
+  width: 100%;
+  max-height: 44em;
+  margin-top: 2.5%;
+  overflow-y: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.single-result {
+  width: 26%;
+  margin: 2% 0 0 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}

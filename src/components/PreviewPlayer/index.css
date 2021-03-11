@@ -1,0 +1,37 @@
+.preview-container {
+  width: 100%;
+}
+.preview {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  border: 2px solid blue;
+  box-sizing: border-box;
+  padding: 1%;
+}
+.player {
+  width: 49.5%;
+}
+.cover-img-container {
+  max-height: 64px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.cover-img {
+  display: block;
+  width: 60%;
+  max-width: 100%;
+  max-height: 64px;
+  object-fit: contain;
+}
+.cover-title {
+  width: 49%;
+}
+.song-details {
+  width: 49.5%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
