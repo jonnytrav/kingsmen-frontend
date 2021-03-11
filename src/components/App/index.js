@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Results from "../Results";
 
 import "./App.css";
@@ -24,7 +25,9 @@ const App = () => {
 
   return (
     <div className="app-container">
+      <Link to="youtube.com">youtube</Link>
       {/* INPUT SECTION */}
+
       <div className="search-container">
         <form
           className="search-form"
