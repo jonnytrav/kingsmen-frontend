@@ -7,7 +7,7 @@ const Results = props => {
 
   useEffect(() => {
     setResults(props.dataList);
-  }, [props]);
+  }, [props.dataList]);
 
   return (
     <div className="results-list-container">
