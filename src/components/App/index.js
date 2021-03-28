@@ -19,8 +19,6 @@ const App = () => {
       .then(data => {
         const updatedResults = data.results;
         setSearchResults(updatedResults);
-        // FIGURE OUT HOW TO ADD THE BELOW RESULTS TO THE ROUTE PARAMS WHEN REDIRECTED
-        console.log(updatedResults);
       })
       .catch(err => console.log(err));
   };
@@ -28,13 +26,10 @@ const App = () => {
   return (
     <div className="app-container">
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Input handleChange={setSearchTerms} handleSubmit={onSubmitHandler} />
           <Results dataList={results} />
         </Route>
-        {/* <Route path="/search-results">
-          <Results dataList={results} />
-        </Route> */}
       </Switch>
     </div>
   );

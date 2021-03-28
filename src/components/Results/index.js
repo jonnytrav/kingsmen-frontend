@@ -17,7 +17,9 @@ const Results = props => {
           <div className="single-result">
             <PreviewPlayer
               id={key}
+              trackId={r.trackId}
               url={r.previewUrl}
+              itunesLink={r.trackViewUrl}
               coverImg={r.artworkUrl100}
               song={r.trackName}
               artist={r.artistName}

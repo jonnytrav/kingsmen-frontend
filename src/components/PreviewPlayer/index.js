@@ -44,6 +44,11 @@ const PreviewPlayer = props => {
           <div>Artist: {props.artist}</div>
           <div>Genre: {props.genre}</div>
         </div>
+        <div className="itunes-link-container">
+          <a className="itunes-link" href={props.itunesLink} target="_blank">
+            Watch Full Video on iTunes
+          </a>
+        </div>
       </ReactModal>
     </div>
   );

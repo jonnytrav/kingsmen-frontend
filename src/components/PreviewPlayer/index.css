@@ -5,7 +5,6 @@
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  border: 2px solid blue;
   box-sizing: border-box;
   padding: 1%;
 }
@@ -34,4 +33,29 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.song-details div {
+  margin-bottom: 5%;
+}
+.itunes-link-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  /* border: 1px solid red; */
+  height: 35%;
+}
+.itunes-link {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(76, 175, 207);
+  box-shadow: 2px 1.5px 1px blue;
+  width: 15.5%;
+  height: 10%;
+  text-align: center;
+}
+.itunes-link-container a:active {
+  box-shadow: none;
+  margin-top: 1.5px;
 }

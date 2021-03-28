@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const Input = props => {
   return (
@@ -21,7 +21,6 @@ const Input = props => {
           onChange={e => {
             e.preventDefault();
             props.handleChange(e.target.value);
-            // console.log(e.target.value);
           }}
           onBlur={e => {
             e.preventDefault();
