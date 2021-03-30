@@ -45,7 +45,12 @@ const PreviewPlayer = props => {
           <div>Genre: {props.genre}</div>
         </div>
         <div className="itunes-link-container">
-          <a className="itunes-link" href={props.itunesLink} target="_blank">
+          <a
+            className="itunes-link"
+            href={props.itunesLink}
+            target="_blank"
+            rel="noreferrer"
+          >
             Watch Full Video on iTunes
           </a>
         </div>
