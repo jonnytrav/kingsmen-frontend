@@ -7,11 +7,21 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-.single-result {
+.result-card {
   width: 26%;
-  margin: 2% 0 0 0;
+  box-sizing: border-box;
+  padding: 1.7% 1% 1.3% 1%;
+  margin-bottom: 1%;
+  box-shadow: 7px 7px 3px grey;
+  background-color: #0061ff;
+  background-image: linear-gradient(160deg, #d5f3fe -125%, #3c99dc 105%);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-evenly;
+  border: 1px solid white;
+  border-radius: 1.5vh;
+}
+.result-card:hover {
+  cursor: pointer;
 }

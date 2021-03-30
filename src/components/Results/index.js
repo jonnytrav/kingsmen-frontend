@@ -14,7 +14,7 @@ const Results = props => {
       {results.map((r, key) => {
         console.log(r);
         return (
-          <div className="single-result">
+          <div className="result-card">
             <PreviewPlayer
               id={key}
               trackId={r.trackId}
